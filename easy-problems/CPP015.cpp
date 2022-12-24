@@ -424,7 +424,69 @@ int main()
     for (int j = 1; j <= i; j++)
     {
       cout << coef << " ";
-      coef = coef * (i - j) / j;      
+      coef = coef * (i - j) / j;
+    }
+    cout << endl;
+  }
+}
+
+// Hallow Diamond Pattren
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+  int rows;
+
+  cout << "Enter number of rows: ";
+  cin >> rows;
+
+  for (int i = 0; i < rows; i++)
+  {
+    for (int j = 0; j < (rows * 2); j++)
+    {
+      if (i + j <= rows - 1)
+      {
+        cout << "*";
+      }
+      else
+      {
+        cout << " ";
+      }
+      if ((i + rows) <= j)
+      {
+        cout << "*";
+      }
+      else
+      {
+        cout << " ";
+      }
+    }
+    cout << endl;
+  }
+
+  for (int i = 0; i < rows; i++)
+  {
+    for (int j = 0; j < (2 * rows); j++)
+    {
+      if (i >= j)
+      {
+        cout << "*";
+      }
+      else
+      {
+        cout << " ";
+      }
+      if (i >= (2 * rows - 1) - j)
+      {
+        cout << "*";
+      }
+      else
+      {
+        cout << " ";
+      }
     }
     cout << endl;
   }
