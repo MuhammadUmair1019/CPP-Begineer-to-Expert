@@ -368,14 +368,13 @@ int main()
   }
 }
 
-// reverse full pyramid triangle 
-// * * * * * * 
-//  * * * * * 
-//   * * * * 
-//    * * * 
-//     * * 
-//      * 
-
+// reverse full pyramid triangle
+// * * * * * *
+//  * * * * *
+//   * * * *
+//    * * *
+//     * *
+//      *
 
 #include <iostream>
 using namespace std;
@@ -397,6 +396,35 @@ int main()
     for (int j = 1; j <= i; j++)
     {
       cout << "* ";
+    }
+    cout << endl;
+  }
+}
+
+// Pascale triangel
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+  int rows;
+
+  cout << "Enter number of rows: ";
+  cin >> rows;
+
+  for (int i = 1; i <= rows; i++)
+  {
+    int coef = 1;
+    for (int k = rows - i; k > 0; k--)
+    {
+      cout << " ";
+    }
+    for (int j = 1; j <= i; j++)
+    {
+      cout << coef << " ";
+      coef = coef * (i - j) / j;      
     }
     cout << endl;
   }
