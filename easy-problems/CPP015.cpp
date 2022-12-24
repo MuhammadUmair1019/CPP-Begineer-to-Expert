@@ -431,6 +431,16 @@ int main()
 }
 
 // Hallow Diamond Pattren
+// * * * * *  * * * * *
+// * * * *      * * * *
+// * * *          * * *
+// * *              * *
+// *                  *
+// *                  *
+// * *              * *
+// * * *          * * *
+// * * * *      * * * *
+// * * * * *  * * * * *
 
 #include <iostream>
 using namespace std;
